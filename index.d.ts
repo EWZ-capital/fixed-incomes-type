@@ -22,7 +22,7 @@ export type ProductName =
   | "NTN-B Principal"
   | "Tesouro Renda+";
 
-export type IndexType = "Pré-fixado" | "Pós-fixado" | "Híbrido" | "COE";
+export type IndexType = "Pré-fixado" | "Pós-fixado" | "Híbrido" | "COE" | "CFF" ;
 
 export type MicroClassType =
   | "Poupança"
@@ -30,6 +30,7 @@ export type MicroClassType =
   | "Juros"
   | "Inflação"
   | "COE"
+  | "CFF"
   | "Indefinido";
 
 export type IssuerType =
@@ -42,7 +43,7 @@ export type OriginType = "B3" | "Client" | "B3_Client";
 
 export type StrategyType = "Rentabilidade" | "Caixa" | "Reserva";
 
-export type BenchmarkType = "Pré-fixado" | "CDI" | "Selic" | "IPCA" | "IGPM" | "COE";
+export type BenchmarkType = "Pré-fixado" | "CDI" | "Selic" | "IPCA" | "IGPM" | "COE" | "CFF";
 
 export interface IFixedIncomes {
   id: string;
