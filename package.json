@@ -1,0 +1,10 @@
+{
+  "name": "fixed-incomes-types",
+  "author": "CauaMatheus",
+  "version": "1.0.0",
+  "description": "Just a type lib to integrate multiple services with same type",
+  "main": "",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "typeScriptVersion": "4.3"
+}
