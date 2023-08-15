@@ -1,7 +1,7 @@
 {
   "name": "fixed-incomes-types",
   "author": "CauaMatheus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just a type lib to integrate multiple services with same type",
   "main": "index.js",
   "types": "index.d.ts",
