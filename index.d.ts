@@ -13,14 +13,15 @@ export type ProductName =
   | "LFG"
   | "LTEL"
   | "LF"
-  | "Poupanca"
+  | "Poupança"
   | "COE"
   | "LFT"
   | "LTN"
   | "NTN-F"
   | "NTN-B"
   | "NTN-B Principal"
-  | "Tesouro Renda+";
+  | "Tesouro Renda+"
+  | "Tesouro Educa+";
 
 export type IndexType = "Pré-fixado" | "Pós-fixado" | "Híbrido" | "COE" | "CFF" ;
 
