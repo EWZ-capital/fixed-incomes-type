@@ -72,6 +72,8 @@ export interface IFixedIncomes {
   totalNetProfit: string
   assetIndex?: string
   anualNetProfit?: string
+  rentNetProfit?: string
+  rentProfit?: string
   updated_at: Date
   created_at: Date;
 }
