@@ -20,8 +20,7 @@ export type ProductName =
   | "NTN-F"
   | "NTN-B"
   | "NTN-B Principal"
-  | "Tesouro Renda+"
-  | "Tesouro Educa+";
+  | "Tesouro Renda+";
 
 export type IndexType = "Pré-fixado" | "Pós-fixado" | "Híbrido" | "COE" | "CFF" ;
 
