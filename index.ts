@@ -116,4 +116,5 @@ export interface IFixedIncomes {
   rentProfit?: string
   updated_at: Date
   created_at: Date;
+  color?: string;
 }
