@@ -1,49 +1,89 @@
-export type ProductName =
-  | "LCI"
-  | "LCA"
-  | "LC"
-  | "CDB"
-  | "LIG"
-  | "DEB"
-  | "CRI"
-  | "CRA"
-  | "CFF"
-  | "LFSN"
-  | "LFSC"
-  | "LFG"
-  | "LTEL"
-  | "LF"
-  | "Poupança"
-  | "COE"
-  | "LFT"
-  | "LTN"
-  | "NTN-F"
-  | "NTN-B"
-  | "NTN-B Principal"
-  | "Tesouro Renda+";
+export const ProductNameValues = [
+  "LCI",
+  "LCA",
+  "LC",
+  "CDB",
+  "LIG",
+  "DEB",
+  "CRI",
+  "CRA",
+  "CFF",
+  "LFSN",
+  "LFSC",
+  "LFG",
+  "LTEL",
+  "LF",
+  "Poupança",
+  "COE",
+  "LFT",
+  "LTN",
+  "NTN-F",
+  "NTN-B",
+  "NTN-B Principal",
+  "Tesouro Renda+"
+] as const;
 
-export type IndexType = "Pré-fixado" | "Pós-fixado" | "Híbrido" | "COE" | "CFF" ;
+export type ProductName = typeof ProductNameValues[number];
 
-export type MicroClassType =
-  | "Poupança"
-  | "Pré-fixado"
-  | "Juros"
-  | "Inflação"
-  | "COE"
-  | "CFF"
-  | "Indefinido";
+export const IndexTypeValues = [
+  "Pré-fixado",
+  "Pós-fixado",
+  "Híbrido",
+  "COE",
+  "CFF"
+] as const;
+export type IndexType = typeof IndexTypeValues[number];
 
-export type IssuerType =
-  | "Emissão Bancária"
-  | "Crédito Privado"
-  | "Tesouro Direto"
-  | "Indefinido";
+export const MicroClassTypeValues = [
+  "Poupança",
+  "Pré-fixado",
+  "Juros",
+  "Inflação",
+  "COE",
+  "CFF",
+  "Indefinido"
+] as const;
+export type MicroClassType = typeof MicroClassTypeValues[number];
 
-export type OriginType = "B3" | "Client" | "B3_Client";
+export const IssuerTypeValues = [
+  "Emissão Bancária",
+  "Crédito Privado",
+  "Tesouro Direto",
+  "Indefinido"
+] as const;
+export type IssuerType = typeof IssuerTypeValues[number];
 
-export type StrategyType = "Rentabilidade" | "Caixa" | "Reserva";
+export const OriginTypeValues = [
+  "B3",
+  "Client",
+  "B3_Client"
+] as const;
+export type OriginType = typeof OriginTypeValues[number];
 
-export type BenchmarkType = "Pré-fixado" | "CDI" | "Selic" | "IPCA" | "IGPM" | "COE" | "CFF";
+export const StrategyTypeValues = [
+  "Rentabilidade",
+  "Caixa",
+  "Reserva"
+] as const;
+export type StrategyType = typeof StrategyTypeValues[number];
+
+export const BenchmarkTypeValues = [
+  "Pré-fixado",
+  "CDI",
+  "Selic",
+  "IPCA",
+  "IGPM",
+  "COE",
+  "CFF"
+] as const;
+export type BenchmarkType = typeof BenchmarkTypeValues[number];
+
+export const FreeTaxInputValues = [
+  "Sim",
+  "Não",
+  "Não sei"
+] as const;
+export type FreeTaxInput = typeof FreeTaxInputValues[number];
 
 export interface IFixedIncomes {
   id: string;
