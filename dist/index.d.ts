@@ -20,8 +20,8 @@ export interface IFixedIncomes {
     productName: ProductName;
     corporationName: string;
     participantDocumentNumber: string;
-    issueDate?: Date;
-    expirationDate: Date;
+    issueDate?: Date | string;
+    expirationDate: Date | string;
     fixedIncomeQuantity: string;
     initialUnitValue: string;
     indexType: IndexType;
