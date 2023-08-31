@@ -102,7 +102,7 @@ export interface IFixedIncomes {
   strategy: StrategyType
   rate: string
   nickname: string
-  taxFree: boolean
+  taxFree: FreeTaxInput
   benchmark: BenchmarkType
   initialValue: string
   grossValue: string
