@@ -12,16 +12,14 @@ export declare const StrategyTypeValues: readonly ["Rentabilidade", "Caixa", "Re
 export type StrategyType = typeof StrategyTypeValues[number];
 export declare const BenchmarkTypeValues: readonly ["Pré-fixado", "CDI", "Selic", "IPCA", "IGPM", "COE", "CFF"];
 export type BenchmarkType = typeof BenchmarkTypeValues[number];
-export declare const FreeTaxInputValues: readonly ["Sim", "Não", "Não sei"];
-export type FreeTaxInput = typeof FreeTaxInputValues[number];
 export interface IFixedIncomes {
     id: string;
     tickerSymbol: string;
     productName: ProductName;
     corporationName: string;
     participantDocumentNumber: string;
-    issueDate?: Date | string;
-    expirationDate: Date | string;
+    issueDate?: Date;
+    expirationDate: Date;
     fixedIncomeQuantity: string;
     initialUnitValue: string;
     indexType: IndexType;
@@ -31,19 +29,18 @@ export interface IFixedIncomes {
     strategy: StrategyType;
     rate: string;
     nickname: string;
-    taxFree: FreeTaxInput;
+    taxFree: boolean;
     benchmark: BenchmarkType;
     initialValue: string;
-    grossValue: string;
-    netValue: string;
+    grossValue?: string;
+    netValue?: string;
     anualProfit?: string;
-    totalProfit: string;
-    totalNetProfit: string;
+    totalProfit?: string;
+    totalNetProfit?: string;
     assetIndex?: string;
     anualNetProfit?: string;
     rentNetProfit?: string;
     rentProfit?: string;
     updated_at: Date;
     created_at: Date;
-    color?: string;
 }

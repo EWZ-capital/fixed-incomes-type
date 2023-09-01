@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.FreeTaxInputValues = exports.BenchmarkTypeValues = exports.StrategyTypeValues = exports.OriginTypeValues = exports.IssuerTypeValues = exports.MicroClassTypeValues = exports.IndexTypeValues = exports.ProductNameValues = void 0;
+exports.BenchmarkTypeValues = exports.StrategyTypeValues = exports.OriginTypeValues = exports.IssuerTypeValues = exports.MicroClassTypeValues = exports.IndexTypeValues = exports.ProductNameValues = void 0;
 exports.ProductNameValues = [
     "LCI",
     "LCA",
@@ -65,9 +65,4 @@ exports.BenchmarkTypeValues = [
     "IGPM",
     "COE",
     "CFF"
-];
-exports.FreeTaxInputValues = [
-    "Sim",
-    "Não",
-    "Não sei"
 ];

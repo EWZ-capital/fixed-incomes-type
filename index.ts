@@ -78,43 +78,35 @@ export const BenchmarkTypeValues = [
 ] as const;
 export type BenchmarkType = typeof BenchmarkTypeValues[number];
 
-export const FreeTaxInputValues = [
-  "Sim",
-  "Não",
-  "Não sei"
-] as const;
-export type FreeTaxInput = typeof FreeTaxInputValues[number];
-
 export interface IFixedIncomes {
   id: string;
   tickerSymbol: string;
   productName: ProductName;
   corporationName: string;
-  participantDocumentNumber: string
-  issueDate?: Date
-  expirationDate: Date
-  fixedIncomeQuantity: string
-  initialUnitValue: string
-  indexType: IndexType
-  microClass: MicroClassType
-  issuerType: IssuerType
-  origin: OriginType
-  strategy: StrategyType
-  rate: string
-  nickname: string
-  taxFree: FreeTaxInput
-  benchmark: BenchmarkType
-  initialValue: string
-  grossValue: string
-  netValue: string
-  anualProfit?: string
-  totalProfit: string
-  totalNetProfit: string
-  assetIndex?: string
-  anualNetProfit?: string
-  rentNetProfit?: string
-  rentProfit?: string
-  updated_at: Date
+  participantDocumentNumber: string;
+  issueDate?: Date;
+  expirationDate: Date;
+  fixedIncomeQuantity: string;
+  initialUnitValue: string;
+  indexType: IndexType;
+  microClass: MicroClassType;
+  issuerType: IssuerType;
+  origin: OriginType;
+  strategy: StrategyType;
+  rate: string;
+  nickname: string;
+  taxFree: boolean;
+  benchmark: BenchmarkType;
+  initialValue: string;
+  grossValue?: string;
+  netValue?: string;
+  anualProfit?: string;
+  totalProfit?: string;
+  totalNetProfit?: string;
+  assetIndex?: string;
+  anualNetProfit?: string;
+  rentNetProfit?: string;
+  rentProfit?: string;
+  updated_at: Date;
   created_at: Date;
-  color?: string;
 }
